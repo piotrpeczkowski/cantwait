@@ -16,7 +16,19 @@ class DetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Can\'t Wait 🤩'),
+        title: BlocProvider(
+          create: (context) =>
+              DetailsCubit(ItemsRepository())..getItemWithID(id),
+          child: BlocBuilder<DetailsCubit, DetailsState>(
+            builder: (context, state) {
+              final itemModel = state.itemModel;
+              if (itemModel == null) {
+                return const CircularProgressIndicator();
+              }
+              return Text(itemModel.title);
+            },
+          ),
+        ),
       ),
       body: BlocProvider(
         create: (context) => DetailsCubit(ItemsRepository())..getItemWithID(id),
