@@ -29,6 +29,13 @@
             {
               "client_id": "150272954599-e3naaaj5u8gda6meh8nius5lqtomt7uk.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "150272954599-sj0tgjshhsc28i631ckv0plsk3aa0io3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.piotrpeczkowski.cantwait28"
+              }
             }
           ]
         }
