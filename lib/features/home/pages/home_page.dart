@@ -61,7 +61,7 @@ class _HomePageBody extends StatelessWidget {
           }
           return ListView(
             padding: const EdgeInsets.symmetric(
-              vertical: 20,
+              vertical: 10,
             ),
             children: [
               for (final itemModel in itemModels)
@@ -121,7 +121,7 @@ class _ListViewItem extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(
           vertical: 10,
-          horizontal: 30,
+          horizontal: 15,
         ),
         child: Container(
           decoration: const BoxDecoration(
@@ -130,7 +130,7 @@ class _ListViewItem extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                height: 80,
+                height: 100,
                 decoration: BoxDecoration(
                   color: Colors.black12,
                   image: DecorationImage(
